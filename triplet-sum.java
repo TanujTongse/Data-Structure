@@ -14,6 +14,7 @@ class Demo
              ary[i]=s.nextInt();
         }
         boolean f=false;
+        int c=0;
         for(int i=0;i<n-2;i++)
         {
            for(int j=i+1;j<n-1;j++)
@@ -24,7 +25,7 @@ class Demo
                   {
                       System.out.println(ary[i]+" "+ary[j]+" "+ary[k]);
                       f=true;
-                      break;
+                      c++;
                   }
               }
            }
@@ -32,6 +33,10 @@ class Demo
         if(!f)
         {
              	System.out.println("No Triplet");
+        }
+        else
+        {
+                System.out.println("There are "+c+" Triplet");
         }
     }
 }
