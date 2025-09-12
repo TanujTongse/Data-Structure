@@ -19,7 +19,7 @@ class Demo
         {
            for(int j=i+1;j<n-1;j++)
            {
-              for(int k=j+1;j<n;j++)
+              for(int k=j+1;k<n;k++)
               {
                   if(ary[i]+ary[j]+ary[k]==0)
                   {
