@@ -31,7 +31,7 @@ class Demo
 }
 
 
-//Time Complexity: O(n)
+//Time Complexity: O(n^2)
 //Auxiliary Space: O(1)
 
 
