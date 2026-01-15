@@ -31,3 +31,35 @@ class Demo
 }
 
 // Time Comeplexity O(n);
+
+
+2) Approach 
+
+import java.util.*;
+class Demo
+{
+    static int palindrome(String s)
+    {
+       int l=0;
+       int r=s.length()-1;
+       while(l<r)
+       {
+          if(s.charAt(l)!=s.charAt(r))
+          {
+              return 0;
+          }
+          l++;
+          r--;
+       }
+        return 1;
+    }
+    public static void main(String tt[])
+    {
+        Scanner s=new Scanner(System.in); 
+        System.out.println("Enter the String:-");
+        String s1=s.nextLine();
+        System.out.println(palindrome(s1));
+    }
+}
+
+//Time Complexity Using Two-Pointers - O(n) time and O(1) space
